@@ -1,6 +1,6 @@
 <?php
   // put your TMDb API key here:
-  $api_key = "???";
+  $api_key = "0e8c333b96ef9be78d1b0ae53da7e0b7";
 
   header("Content-type: application/json\n\n");
   $method = $_GET['method'];
