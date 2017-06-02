@@ -1,4 +1,5 @@
 function initialize () {
+alert("Hi");
 }
 
 function sendRequest () {
