@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Display Movie Information</title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript" src="movies.js"></script>
+    <!-------W3.CSS Library-------------------------------------------------------------------------------------------->
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    </head>
+
+    <body onload="initialize();" class="w3-pale-green w3-tangerine">
+
+    <!----------------Search Bar Container----------------------------------------------------------------------------->
+        <div class="w3-row w3-teal w3-card-12 w3-padding-12">
+                <div class="w3-col m4"><p></p></div>
+                <div class="w3-col m4">
+                    <form class="w3-container">
+                        <input class="w3-input w3-leftbar w3-border-grey w3-border-0 w3-hover-light-grey w3-text-grey
+                            w3-hover-text-dark-grey w3-left w3-normal" style="width:70%" type="text" id="form-input" />
+                        <input class="w3-btn w3-white w3-hover-light-grey w3-normal" style="height:39px" type="button"
+                               onclick="sendRequest(); displayWelcome();" value="Display Info"/>
+                    </form>
+                </div>
+                <div class="w3-col m4"><p></p></div>
+        </div>
+    <!----------------------------------------------------------------------------------------------------------------->
+        <div id="movieInfo" style="margin:20px"></div>
+
+    <!---------------Search results and movie details container-------------------------------------------------------->
+    <div id="displayWelcome" class="w3-card w3-padding-2 w3-center" style="display:none;margin-bottom:15px;">
+        <p id="searchResult" class="w3-panel"></p>
+    </div>
+    <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-col m4">
+                <div id="listMovies"></div>
+            </div>
+
+            <div class="w3-col m8">
+                <div id="listMovieInfo"></div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------->
+
+    </body>
+</html>
